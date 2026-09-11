@@ -1,1 +1,1979 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sathco Group | Event Management, Decores & Clips | Mangalore</title>
+
+<meta name="description" content="Sathco Group - Event Management, Premium Decores and Event Clips in Mangalore. Creating memorable experiences with professional event solutions.">
+
+<meta name="keywords" content="Sathco Group, event management Mangalore, wedding decoration Mangalore, event decors Mangalore, Sathco Decores, Sathco Clips">
+
+<meta name="author" content="Sathco Group">
+
+<meta name="theme-color" content="#000000">
+
+<meta property="og:title" content="Sathco Group | Event Management, Decores & Clips">
+<meta property="og:description" content="Creating memorable experiences through Event Management, Decores and Clips.">
+<meta property="og:type" content="website">
+
+<style>
+/* =========================================================
+SATHCO GROUP
+PREMIUM BLACK + DARK GRAY WEBSITE
+========================================================= */
+
+:root {
+--black: #000000;
+--dark: #0a0a0a;
+--dark-2: #111111;
+--gray: #545454;
+--gray-light: #8b8b8b;
+--white: #ffffff;
+--soft-white: #eeeeee;
+--border: rgba(255,255,255,0.12);
+--border-light: rgba(255,255,255,0.20);
+--max-width: 1240px;
+--radius: 18px;
+--transition: 0.35s ease;
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html {
+scroll-behavior: smooth;
+scroll-padding-top: 90px;
+}
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+background: var(--black);
+color: var(--white);
+line-height: 1.6;
+overflow-x: hidden;
+}
+
+body.no-scroll {
+overflow: hidden;
+}
+
+img {
+display: block;
+width: 100%;
+}
+
+a {
+color: inherit;
+text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+font: inherit;
+}
+
+button {
+cursor: pointer;
+}
+
+::selection {
+background: var(--white);
+color: var(--black);
+}
+
+/* =========================================================
+PRELOADER
+========================================================= */
+
+#preloader {
+position: fixed;
+inset: 0;
+background: var(--black);
+display: flex;
+align-items: center;
+justify-content: center;
+z-index: 99999;
+transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+#preloader.hide {
+opacity: 0;
+visibility: hidden;
+}
+
+.loader {
+width: 55px;
+height: 55px;
+border: 2px solid rgba(255,255,255,0.15);
+border-top-color: var(--white);
+border-radius: 50%;
+animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+to {
+transform: rotate(360deg);
+}
+}
+
+/* =========================================================
+HEADER
+========================================================= */
+
+header {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 84px;
+z-index: 5000;
+background: rgba(0,0,0,0.55);
+border-bottom: 1px solid transparent;
+backdrop-filter: blur(16px);
+-webkit-backdrop-filter: blur(16px);
+transition: var(--transition);
+}
+
+header.scrolled {
+background: rgba(0,0,0,0.94);
+border-bottom-color: var(--border);
+}
+
+.nav-container {
+width: min(100% - 40px, var(--max-width));
+height: 100%;
+margin: auto;
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 25px;
+}
+
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+min-width: 0;
+}
+
+.logo-box {
+width: 58px;
+height: 58px;
+background: var(--white);
+border-radius: 10px;
+padding: 4px;
+overflow: hidden;
+flex-shrink: 0;
+}
+
+.logo-box img {
+width: 100%;
+height: 100%;
+object-fit: contain;
+}
+
+.brand-name {
+font-size: 19px;
+font-weight: 800;
+letter-spacing: 4px;
+white-space: nowrap;
+}
+
+.brand-sub {
+display: block;
+color: #aaa;
+font-size: 8px;
+letter-spacing: 2px;
+margin-top: 2px;
+}
+
+nav {
+display: flex;
+align-items: center;
+gap: 30px;
+}
+
+nav a {
+position: relative;
+color: #ddd;
+font-size: 13px;
+font-weight: 600;
+letter-spacing: 1px;
+text-transform: uppercase;
+transition: var(--transition);
+}
+
+nav a::after {
+content: "";
+position: absolute;
+left: 0;
+bottom: -8px;
+width: 0;
+height: 1px;
+background: var(--white);
+transition: var(--transition);
+}
+
+nav a:hover {
+color: var(--white);
+}
+
+nav a:hover::after {
+width: 100%;
+}
+
+.nav-cta {
+border: 1px solid var(--border-light);
+padding: 11px 17px;
+border-radius: 100px;
+}
+
+nav .nav-cta::after {
+display: none;
+}
+
+.nav-cta:hover {
+background: var(--white);
+color: var(--black);
+}
+
+.menu-btn {
+display: none;
+width: 45px;
+height: 45px;
+border: 1px solid var(--border);
+border-radius: 50%;
+background: transparent;
+color: var(--white);
+font-size: 22px;
+}
+
+/* =========================================================
+MOBILE MENU
+========================================================= */
+
+.mobile-menu {
+position: fixed;
+inset: 84px 0 0;
+background: rgba(0,0,0,0.98);
+z-index: 4999;
+padding: 35px 25px;
+transform: translateX(100%);
+transition: transform 0.4s ease;
+overflow-y: auto;
+}
+
+.mobile-menu.open {
+transform: translateX(0);
+}
+
+.mobile-menu a {
+display: block;
+padding: 20px 0;
+border-bottom: 1px solid var(--border);
+font-size: 22px;
+font-weight: 600;
+}
+
+.mobile-menu .mobile-whatsapp {
+margin-top: 25px;
+text-align: center;
+border: 1px solid var(--border-light);
+border-radius: 100px;
+padding: 15px;
+}
+
+/* =========================================================
+HERO
+========================================================= */
+
+.hero {
+min-height: 100svh;
+position: relative;
+display: flex;
+align-items: center;
+overflow: hidden;
+background:
+linear-gradient(
+90deg,
+rgba(0,0,0,0.82) 0%,
+rgba(0,0,0,0.58) 40%,
+rgba(0,0,0,0.30) 100%
+),
+url("sathco-hero-background.jpg") center center / cover no-repeat;
+}
+
+.hero::before {
+content: "";
+position: absolute;
+inset: 0;
+background:
+radial-gradient(
+circle at 50% 45%,
+transparent 0%,
+rgba(0,0,0,0.15) 45%,
+rgba(0,0,0,0.72) 100%
+);
+pointer-events: none;
+}
+
+.hero::after {
+content: "";
+position: absolute;
+left: 0;
+right: 0;
+bottom: 0;
+height: 180px;
+background: linear-gradient(transparent, var(--black));
+pointer-events: none;
+}
+
+.hero-content {
+position: relative;
+z-index: 2;
+width: min(100% - 40px, var(--max-width));
+margin: auto;
+padding-top: 80px;
+}
+
+.hero-tag {
+display: inline-flex;
+align-items: center;
+gap: 10px;
+border: 1px solid var(--border-light);
+border-radius: 100px;
+padding: 8px 15px;
+color: #ddd;
+font-size: 10px;
+letter-spacing: 3px;
+text-transform: uppercase;
+margin-bottom: 25px;
+background: rgba(0,0,0,0.25);
+backdrop-filter: blur(8px);
+}
+
+.hero-tag span {
+width: 6px;
+height: 6px;
+background: var(--white);
+border-radius: 50%;
+display: inline-block;
+}
+
+.hero h1 {
+max-width: 850px;
+font-size: clamp(48px, 7vw, 100px);
+line-height: 0.98;
+letter-spacing: -4px;
+font-weight: 800;
+text-transform: uppercase;
+}
+
+.hero h1 em {
+font-style: normal;
+color: #aaa;
+}
+
+.hero-description {
+max-width: 580px;
+color: #c7c7c7;
+margin-top: 28px;
+font-size: 16px;
+line-height: 1.8;
+}
+
+.hero-buttons {
+display: flex;
+flex-wrap: wrap;
+gap: 12px;
+margin-top: 35px;
+}
+
+.btn {
+display: inline-flex;
+align-items: center;
+justify-content: center;
+gap: 9px;
+min-height: 52px;
+padding: 0 24px;
+border-radius: 100px;
+border: 1px solid var(--border-light);
+transition: var(--transition);
+font-size: 12px;
+font-weight: 700;
+letter-spacing: 1px;
+text-transform: uppercase;
+}
+
+.btn-primary {
+background: var(--white);
+color: var(--black);
+border-color: var(--white);
+}
+
+.btn-primary:hover {
+background: transparent;
+color: var(--white);
+}
+
+.btn-outline {
+background: rgba(0,0,0,0.25);
+color: var(--white);
+backdrop-filter: blur(8px);
+}
+
+.btn-outline:hover {
+background: var(--white);
+color: var(--black);
+}
+
+.hero-bottom {
+position: absolute;
+z-index: 3;
+bottom: 32px;
+left: 50%;
+transform: translateX(-50%);
+width: min(100% - 40px, var(--max-width));
+display: flex;
+justify-content: space-between;
+align-items: flex-end;
+}
+
+.hero-services {
+display: flex;
+gap: 8px;
+flex-wrap: wrap;
+}
+
+.hero-services span {
+padding: 8px 13px;
+border: 1px solid var(--border);
+border-radius: 100px;
+color: #ccc;
+font-size: 9px;
+letter-spacing: 1.5px;
+text-transform: uppercase;
+background: rgba(0,0,0,0.3);
+backdrop-filter: blur(8px);
+}
+
+.scroll-indicator {
+color: #aaa;
+font-size: 9px;
+letter-spacing: 2px;
+text-transform: uppercase;
+display: flex;
+align-items: center;
+gap: 10px;
+}
+
+.scroll-line {
+width: 50px;
+height: 1px;
+background: #777;
+}
+
+/* =========================================================
+GENERAL
+========================================================= */
+
+section {
+position: relative;
+}
+
+.section {
+padding: 120px 20px;
+}
+
+.container {
+width: min(100%, var(--max-width));
+margin: auto;
+}
+
+.section-header {
+display: flex;
+justify-content: space-between;
+align-items: flex-end;
+gap: 40px;
+margin-bottom: 55px;
+}
+
+.eyebrow {
+color: #999;
+font-size: 10px;
+letter-spacing: 4px;
+text-transform: uppercase;
+margin-bottom: 15px;
+}
+
+.section-title {
+font-size: clamp(36px, 5vw, 66px);
+line-height: 1;
+letter-spacing: -2px;
+text-transform: uppercase;
+}
+
+.section-description {
+max-width: 460px;
+color: #999;
+font-size: 14px;
+line-height: 1.8;
+}
+
+/* =========================================================
+INTRO
+========================================================= */
+
+.intro {
+background: var(--black);
+}
+
+.intro-grid {
+display: grid;
+grid-template-columns: 1.1fr 0.9fr;
+gap: 80px;
+align-items: center;
+}
+
+.intro-heading {
+font-size: clamp(35px, 5vw, 65px);
+line-height: 1.05;
+letter-spacing: -2px;
+text-transform: uppercase;
+}
+
+.intro-heading span {
+color: #555;
+}
+
+.intro-copy {
+color: #999;
+margin-top: 28px;
+max-width: 650px;
+line-height: 1.9;
+}
+
+.intro-mark {
+border: 1px solid var(--border);
+border-radius: 50%;
+width: 280px;
+height: 280px;
+margin-left: auto;
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+}
+
+.intro-mark::before {
+content: "";
+position: absolute;
+inset: 22px;
+border: 1px solid var(--border);
+border-radius: 50%;
+}
+
+.intro-mark strong {
+font-size: 60px;
+letter-spacing: -5px;
+}
+
+/* =========================================================
+DIVISIONS
+========================================================= */
+
+.divisions {
+background: #050505;
+}
+
+.division-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 15px;
+}
+
+.division-card {
+min-height: 500px;
+position: relative;
+overflow: hidden;
+border: 1px solid var(--border);
+border-radius: var(--radius);
+background: #111;
+}
+
+.division-card::before {
+content: "";
+position: absolute;
+inset: 0;
+background: linear-gradient(
+to top,
+rgba(0,0,0,0.92) 0%,
+rgba(0,0,0,0.2) 65%,
+rgba(0,0,0,0.05)
+);
+z-index: 1;
+}
+
+.division-card img {
+position: absolute;
+inset: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+filter: grayscale(100%);
+transition: transform 0.8s ease, filter 0.8s ease;
+}
+
+.division-card:hover img {
+transform: scale(1.07);
+filter: grayscale(30%);
+}
+
+.division-number {
+position: absolute;
+top: 20px;
+left: 20px;
+z-index: 2;
+font-size: 10px;
+letter-spacing: 2px;
+color: #aaa;
+}
+
+.division-content {
+position: absolute;
+z-index: 2;
+bottom: 25px;
+left: 25px;
+right: 25px;
+}
+
+.division-content h3 {
+font-size: 25px;
+line-height: 1.1;
+text-transform: uppercase;
+margin-bottom: 12px;
+}
+
+.division-content p {
+color: #aaa;
+font-size: 12px;
+line-height: 1.7;
+margin-bottom: 20px;
+}
+
+.division-link {
+display: inline-flex;
+align-items: center;
+gap: 8px;
+font-size: 10px;
+letter-spacing: 2px;
+text-transform: uppercase;
+}
+
+.division-link span {
+transition: transform 0.3s ease;
+}
+
+.division-card:hover .division-link span {
+transform: translateX(6px);
+}
+
+/* =========================================================
+ABOUT
+========================================================= */
+
+.about-grid {
+display: grid;
+grid-template-columns: 0.85fr 1.15fr;
+gap: 80px;
+align-items: start;
+}
+
+.about-visual {
+min-height: 560px;
+position: relative;
+border: 1px solid var(--border);
+overflow: hidden;
+border-radius: var(--radius);
+}
+
+.about-visual img {
+width: 100%;
+height: 100%;
+min-height: 560px;
+object-fit: cover;
+filter: grayscale(100%);
+}
+
+.about-visual::after {
+content: "";
+position: absolute;
+inset: 0;
+background: linear-gradient(
+180deg,
+transparent 50%,
+rgba(0,0,0,0.75)
+);
+}
+
+.about-content h2 {
+font-size: clamp(38px, 5vw, 70px);
+line-height: 0.98;
+letter-spacing: -3px;
+text-transform: uppercase;
+}
+
+.about-content h2 span {
+color: #555;
+}
+
+.about-content > p {
+color: #999;
+margin-top: 30px;
+line-height: 1.9;
+font-size: 15px;
+}
+
+.stats {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+border-top: 1px solid var(--border);
+border-bottom: 1px solid var(--border);
+margin-top: 45px;
+}
+
+.stat {
+padding: 25px 10px;
+border-right: 1px solid var(--border);
+}
+
+.stat:last-child {
+border-right: none;
+}
+
+.stat strong {
+display: block;
+font-size: 25px;
+margin-bottom: 5px;
+}
+
+.stat span {
+color: #777;
+font-size: 9px;
+letter-spacing: 1.5px;
+text-transform: uppercase;
+}
+
+/* =========================================================
+SERVICES
+========================================================= */
+
+.services {
+background: #050505;
+}
+
+.service-list {
+border-top: 1px solid var(--border);
+}
+
+.service-item {
+display: grid;
+grid-template-columns: 80px 1fr 1.2fr 40px;
+align-items: center;
+gap: 20px;
+padding: 28px 0;
+border-bottom: 1px solid var(--border);
+transition: var(--transition);
+}
+
+.service-item:hover {
+padding-left: 15px;
+padding-right: 15px;
+background: rgba(255,255,255,0.025);
+}
+
+.service-number {
+color: #666;
+font-size: 11px;
+}
+
+.service-name {
+font-size: 22px;
+font-weight: 700;
+text-transform: uppercase;
+}
+
+.service-description {
+color: #777;
+font-size: 12px;
+}
+
+.service-arrow {
+font-size: 22px;
+color: #777;
+transition: transform 0.3s ease;
+}
+
+.service-item:hover .service-arrow {
+transform: translateX(7px);
+color: var(--white);
+}
+
+/* =========================================================
+GALLERY
+========================================================= */
+
+.gallery-grid {
+display: grid;
+grid-template-columns: repeat(12, 1fr);
+gap: 12px;
+}
+
+.gallery-item {
+position: relative;
+overflow: hidden;
+cursor: pointer;
+border-radius: 10px;
+background: #111;
+border: 1px solid var(--border);
+}
+
+.gallery-item:nth-child(1),
+.gallery-item:nth-child(6),
+.gallery-item:nth-child(11) {
+grid-column: span 6;
+aspect-ratio: 16 / 10;
+}
+
+.gallery-item:nth-child(2),
+.gallery-item:nth-child(3),
+.gallery-item:nth-child(7),
+.gallery-item:nth-child(8),
+.gallery-item:nth-child(12),
+.gallery-item:nth-child(13) {
+grid-column: span 3;
+aspect-ratio: 1 / 1;
+}
+
+.gallery-item:nth-child(4),
+.gallery-item:nth-child(5),
+.gallery-item:nth-child(9),
+.gallery-item:nth-child(10),
+.gallery-item:nth-child(14) {
+grid-column: span 3;
+aspect-ratio: 1 / 1;
+}
+
+.gallery-item img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+filter: grayscale(100%);
+transition: transform 0.7s ease, filter 0.7s ease;
+}
+
+.gallery-item:hover img {
+transform: scale(1.08);
+filter: grayscale(20%);
+}
+
+.gallery-overlay {
+position: absolute;
+inset: 0;
+display: flex;
+align-items: flex-end;
+justify-content: space-between;
+padding: 15px;
+background: linear-gradient(transparent, rgba(0,0,0,0.65));
+opacity: 0;
+transition: opacity 0.35s ease;
+}
+
+.gallery-item:hover .gallery-overlay {
+opacity: 1;
+}
+
+.gallery-overlay span {
+font-size: 9px;
+letter-spacing: 2px;
+text-transform: uppercase;
+}
+
+.gallery-icon {
+width: 35px;
+height: 35px;
+border: 1px solid rgba(255,255,255,0.5);
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+/* =========================================================
+LIGHTBOX
+========================================================= */
+
+.lightbox {
+position: fixed;
+inset: 0;
+background: rgba(0,0,0,0.96);
+z-index: 10000;
+display: none;
+align-items: center;
+justify-content: center;
+padding: 30px;
+}
+
+.lightbox.active {
+display: flex;
+}
+
+.lightbox img {
+max-width: 90vw;
+max-height: 85vh;
+width: auto;
+object-fit: contain;
+border: 1px solid var(--border);
+}
+
+.lightbox-close,
+.lightbox-prev,
+.lightbox-next {
+position: absolute;
+width: 48px;
+height: 48px;
+border-radius: 50%;
+border: 1px solid var(--border-light);
+background: rgba(0,0,0,0.6);
+color: var(--white);
+display: flex;
+align-items: center;
+justify-content: center;
+z-index: 2;
+}
+
+.lightbox-close {
+top: 25px;
+right: 25px;
+font-size: 20px;
+}
+
+.lightbox-prev {
+left: 25px;
+top: 50%;
+transform: translateY(-50%);
+}
+
+.lightbox-next {
+right: 25px;
+top: 50%;
+transform: translateY(-50%);
+}
+
+.lightbox-counter {
+position: absolute;
+bottom: 25px;
+left: 50%;
+transform: translateX(-50%);
+color: #aaa;
+font-size: 10px;
+letter-spacing: 2px;
+}
+
+/* =========================================================
+WHY SATHCO
+========================================================= */
+
+.why-grid {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 1px;
+background: var(--border);
+border: 1px solid var(--border);
+}
+
+.why-card {
+background: var(--black);
+padding: 35px 25px;
+min-height: 240px;
+transition: var(--transition);
+}
+
+.why-card:hover {
+background: #101010;
+}
+
+.why-number {
+color: #555;
+font-size: 11px;
+letter-spacing: 2px;
+}
+
+.why-card h3 {
+margin-top: 55px;
+font-size: 18px;
+text-transform: uppercase;
+}
+
+.why-card p {
+color: #777;
+font-size: 11px;
+line-height: 1.7;
+margin-top: 12px;
+}
+
+/* =========================================================
+CTA
+========================================================= */
+
+.cta {
+padding: 130px 20px;
+background:
+linear-gradient(
+rgba(0,0,0,0.83),
+rgba(0,0,0,0.95)
+),
+url("sathco-hero-background.jpg") center / cover no-repeat;
+border-top: 1px solid var(--border);
+border-bottom: 1px solid var(--border);
+}
+
+.cta-inner {
+text-align: center;
+max-width: 850px;
+margin: auto;
+}
+
+.cta h2 {
+font-size: clamp(42px, 7vw, 90px);
+line-height: 0.95;
+letter-spacing: -4px;
+text-transform: uppercase;
+}
+
+.cta p {
+color: #999;
+max-width: 550px;
+margin: 25px auto 0;
+}
+
+.cta-buttons {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 12px;
+margin-top: 35px;
+}
+
+/* =========================================================
+CONTACT
+========================================================= */
+
+.contact-grid {
+display: grid;
+grid-template-columns: 0.8fr 1.2fr;
+gap: 80px;
+}
+
+.contact-info h2 {
+font-size: clamp(40px, 5vw, 70px);
+line-height: 0.98;
+letter-spacing: -3px;
+text-transform: uppercase;
+}
+
+.contact-info h2 span {
+color: #555;
+}
+
+.contact-list {
+margin-top: 40px;
+border-top: 1px solid var(--border);
+}
+
+.contact-row {
+padding: 20px 0;
+border-bottom: 1px solid var(--border);
+}
+
+.contact-label {
+color: #666;
+font-size: 9px;
+letter-spacing: 2px;
+text-transform: uppercase;
+margin-bottom: 5px;
+}
+
+.contact-value {
+font-size: 15px;
+}
+
+.contact-value a:hover {
+text-decoration: underline;
+}
+
+.contact-form {
+background: #080808;
+border: 1px solid var(--border);
+border-radius: var(--radius);
+padding: 35px;
+}
+
+.form-title {
+font-size: 22px;
+text-transform: uppercase;
+margin-bottom: 25px;
+}
+
+.form-grid {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 15px;
+}
+
+.form-group {
+display: flex;
+flex-direction: column;
+gap: 7px;
+}
+
+.form-group.full {
+grid-column: 1 / -1;
+}
+
+.form-group label {
+color: #777;
+font-size: 9px;
+letter-spacing: 2px;
+text-transform: uppercase;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+width: 100%;
+background: #111;
+border: 1px solid var(--border);
+color: var(--white);
+outline: none;
+padding: 14px;
+border-radius: 8px;
+transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+border-color: rgba(255,255,255,0.45);
+background: #151515;
+}
+
+.form-group textarea {
+min-height: 130px;
+resize: vertical;
+}
+
+.form-group select option {
+background: #111;
+color: white;
+}
+
+.form-submit {
+margin-top: 20px;
+width: 100%;
+}
+
+.form-note {
+color: #555;
+font-size: 9px;
+text-align: center;
+margin-top: 12px;
+}
+
+/* =========================================================
+FOOTER
+========================================================= */
+
+footer {
+background: #050505;
+padding: 70px 20px 25px;
+border-top: 1px solid var(--border);
+}
+
+.footer-top {
+width: min(100%, var(--max-width));
+margin: auto;
+display: grid;
+grid-template-columns: 1.3fr 0.7fr 0.7fr 0.8fr;
+gap: 50px;
+padding-bottom: 55px;
+}
+
+.footer-brand {
+max-width: 350px;
+}
+
+.footer-brand .logo-box {
+margin-bottom: 20px;
+}
+
+.footer-brand p {
+color: #666;
+font-size: 12px;
+line-height: 1.8;
+}
+
+.footer-column h4 {
+font-size: 10px;
+letter-spacing: 2px;
+text-transform: uppercase;
+margin-bottom: 20px;
+}
+
+.footer-column a {
+display: block;
+color: #777;
+font-size: 11px;
+margin-bottom: 12px;
+transition: var(--transition);
+}
+
+.footer-column a:hover {
+color: var(--white);
+transform: translateX(4px);
+}
+
+.footer-bottom {
+width: min(100%, var(--max-width));
+margin: auto;
+padding-top: 20px;
+border-top: 1px solid var(--border);
+display: flex;
+justify-content: space-between;
+gap: 20px;
+color: #555;
+font-size: 9px;
+letter-spacing: 1px;
+text-transform: uppercase;
+}
+
+/* =========================================================
+FLOATING WHATSAPP
+========================================================= */
+
+.floating-whatsapp {
+position: fixed;
+right: 22px;
+bottom: 22px;
+width: 58px;
+height: 58px;
+border-radius: 50%;
+background: var(--white);
+color: var(--black);
+z-index: 4000;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 22px;
+box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+transition: transform 0.3s ease;
+}
+
+.floating-whatsapp:hover {
+transform: translateY(-5px) scale(1.04);
+}
+
+/* =========================================================
+REVEAL ANIMATIONS
+========================================================= */
+
+.reveal {
+opacity: 0;
+transform: translateY(30px);
+transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.visible {
+opacity: 1;
+transform: translateY(0);
+}
+
+/* =========================================================
+RESPONSIVE
+========================================================= */
+
+@media (max-width: 1000px) {
+
+nav {
+display: none;
+}
+
+.menu-btn {
+display: block;
+}
+
+.division-grid {
+grid-template-columns: 1fr;
+}
+
+.division-card {
+min-height: 430px;
+}
+
+.intro-grid,
+.about-grid,
+.contact-grid {
+grid-template-columns: 1fr;
+gap: 45px;
+}
+
+.intro-mark {
+margin: auto;
+}
+
+.why-grid {
+grid-template-columns: repeat(2, 1fr);
+}
+
+.footer-top {
+grid-template-columns: repeat(2, 1fr);
+}
+}
+
+@media (max-width: 700px) {
+
+header {
+height: 74px;
+}
+
+.nav-container {
+width: min(100% - 25px, var(--max-width));
+}
+
+.logo-box {
+width: 48px;
+height: 48px;
+}
+
+.brand-name {
+font-size: 15px;
+letter-spacing: 3px;
+}
+
+.brand-sub {
+font-size: 6px;
+}
+
+.mobile-menu {
+inset: 74px 0 0;
+}
+
+.hero-content {
+width: min(100% - 30px, var(--max-width));
+padding-top: 60px;
+}
+
+.hero h1 {
+font-size: clamp(42px, 13vw, 65px);
+letter-spacing: -2.5px;
+}
+
+.hero-description {
+font-size: 13px;
+}
+
+.hero-bottom {
+width: calc(100% - 30px);
+bottom: 20px;
+}
+
+.scroll-indicator {
+display: none;
+}
+
+.section {
+padding: 85px 15px;
+}
+
+.section-header {
+display: block;
+margin-bottom: 35px;
+}
+
+.section-description {
+margin-top: 20px;
+}
+
+.intro-mark {
+width: 220px;
+height: 220px;
+}
+
+.intro-mark strong {
+font-size: 45px;
+}
+
+.about-visual,
+.about-visual img {
+min-height: 400px;
+}
+
+.stats {
+grid-template-columns: 1fr;
+}
+
+.stat {
+border-right: none;
+border-bottom: 1px solid var(--border);
+}
+
+.stat:last-child {
+border-bottom: none;
+}
+
+.service-item {
+grid-template-columns: 40px 1fr 25px;
+}
+
+.service-description {
+display: none;
+}
+
+.gallery-grid {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+}
+
+.gallery-item,
+.gallery-item:nth-child(n) {
+grid-column: span 1;
+aspect-ratio: 1 / 1;
+}
+
+.gallery-item:nth-child(1),
+.gallery-item:nth-child(6),
+.gallery-item:nth-child(11) {
+grid-column: span 2;
+aspect-ratio: 16 / 10;
+}
+
+.why-grid {
+grid-template-columns: 1fr;
+}
+
+.form-grid {
+grid-template-columns: 1fr;
+}
+
+.form-group.full {
+grid-column: auto;
+}
+
+.contact-form {
+padding: 22px;
+}
+
+.footer-top {
+grid-template-columns: 1fr;
+gap: 35px;
+}
+
+.footer-bottom {
+flex-direction: column;
+gap: 10px;
+}
+
+.floating-whatsapp {
+width: 52px;
+height: 52px;
+right: 15px;
+bottom: 15px;
+}
+}
+
+@media (prefers-reduced-motion: reduce) {
+html {
+scroll-behavior: auto;
+}
+
+*,
+*::before,
+*::after {
+animation-duration: 0.01ms !important;
+transition-duration: 0.01ms !important;
+}
+}
+</style>
+</head>
+
+<body>
+
+<!-- =======================================================
+PRELOADER
+======================================================= -->
+
+<div id="preloader">
+<div class="loader"></div>
+</div>
+
+
+<!-- =======================================================
+HEADER
+======================================================= -->
+
+<header id="header">
+
+<div class="nav-container">
+
+<a href="#home" class="brand" aria-label="Sathco Group Home">
+
+<div class="logo-box">
+<img src="sathco-logo.jpg" alt="Sathco Group Logo">
+</div>
+
+<div>
+<div class="brand-name">SATHCO</div>
+<span class="brand-sub">GROUP</span>
+</div>
+
+</a>
+
+
+<nav aria-label="Main navigation">
+
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+
+<a href="https://wa.me/918431316668?text=Hello%20Sathco%20Group,%20I%20would%20like%20to%20make%20an%20enquiry." target="_blank" rel="noopener" class="nav-cta">
+WhatsApp
+</a>
+
+</nav>
+
+
+<button class="menu-btn" id="menuBtn" aria-label="Open menu">
+☰
+</button>
+
+</div>
+
+</header>
+
+
+<!-- =======================================================
+MOBILE MENU
+======================================================= -->
+
+<div class="mobile-menu" id="mobileMenu">
+
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+
+<a
+class="mobile-whatsapp"
+href="https://wa.me/918431316668?text=Hello%20Sathco%20Group,%20I%20would%20like%20to%20make%20an%20enquiry."
+target="_blank"
+rel="noopener"
+>
+WhatsApp Sathco
+</a>
+
+</div>
+
+
+<!-- =======================================================
+HERO
+======================================================= -->
+
+<main>
+
+<section class="hero" id="home">
+
+<div class="hero-content reveal">
+
+<div class="hero-tag">
+<span></span>
+Mangalore • Karnataka
+</div>
+
+<h1>
+We Create
+<em>Moments.</em>
+</h1>
+
+<p class="hero-description">
+Sathco Group brings together professional event management,
+premium decors and event clips to create experiences
+worth remembering.
+</p>
+
+<div class="hero-buttons">
+
+<a href="#services" class="btn btn-primary">
+Explore Services
+<span>→</span>
+</a>
+
+<a
+href="https://wa.me/918431316668?text=Hello%20Sathco%20Group,%20I%20would%20like%20to%20plan%20an%20event."
+target="_blank"
+rel="noopener"
+class="btn btn-outline"
+>
+WhatsApp Us
+</a>
+
+</div>
+
+</div>
+
+
+<div class="hero-bottom">
+
+<div class="hero-services">
+<span>Event Management</span>
+<span>Decores</span>
+<span>Clips</span>
+</div>
+
+<div class="scroll-indicator">
+Scroll to explore
+<span class="scroll-line"></span>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+INTRO
+===================================================== -->
+
+<section class="section intro" id="about">
+
+<div class="container">
+
+<div class="intro-grid">
+
+<div class="reveal">
+
+<div class="eyebrow">01 / Sathco Group</div>
+
+<h2 class="intro-heading">
+One Group.
+<br>
+<span>Three Experiences.</span>
+</h2>
+
+<p class="intro-copy">
+From planning the event to designing the atmosphere
+and capturing the moments, Sathco Group brings
+different creative services together under one vision.
+</p>
+
+</div>
+
+
+<div class="intro-mark reveal">
+<strong>S</strong>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+THREE DIVISIONS
+===================================================== -->
+
+<section class="section divisions">
+
+<div class="container">
+
+<div class="section-header reveal">
+
+<div>
+<div class="eyebrow">02 / Our Divisions</div>
+<h2 class="section-title">What We Do</h2>
+</div>
+
+<p class="section-description">
+Three specialized divisions working together
+to create complete event experiences.
+</p>
+
+</div>
+
+
+<div class="division-grid">
+
+
+<!-- EVENT MANAGEMENT -->
+
+<article class="division-card reveal">
+
+<img
+src="gallery-01.jpg"
+alt="Sathco Event Management"
+loading="lazy"
+>
+
+<div class="division-number">01</div>
+
+<div class="division-content">
+
+<h3>Event<br>Management</h3>
+
+<p>
+Professional planning, coordination and
+execution for memorable events.
+</p>
+
+<a href="#services" class="division-link">
+Explore
+<span>→</span>
+</a>
+
+</div>
+
+</article>
+
+
+<!-- DECORES -->
+
+<article class="division-card reveal">
+
+<img
+src="gallery-02.jpg"
+alt="Sathco Decores"
+loading="lazy"
+>
+
+<div class="division-number">02</div>
+
+<div class="division-content">
+
+<h3>Sathco<br>Decores</h3>
+
+<p>
+Elegant spaces, creative themes and
+premium event decoration.
+</p>
+
+<a href="#services" class="division-link">
+Explore
+<span>→</span>
+</a>
+
+</div>
+
+</article>
+
+
+<!-- CLIPS -->
+
+<article class="division-card reveal">
+
+<img
+src="gallery-03.jpg"
+alt="Sathco Clips"
+loading="lazy"
+>
+
+<div class="division-number">03</div>
+
+<div class="division-content">
+
+<h3>Sathco<br>Clips</h3>
+
+<p>
+Capture the energy, emotion and memories
+of every special occasion.
+</p>
+
+<a href="#gallery" class="division-link">
+View Gallery
+<span>→</span>
+</a>
+
+</div>
+
+</article>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+ABOUT
+===================================================== -->
+
+<section class="section">
+
+<div class="container">
+
+<div class="about-grid">
+
+<div class="about-visual reveal">
+
+<img
+src="gallery-04.jpg"
+alt="Sathco Group Event"
+loading="lazy"
+>
+
+</div>
+
+
+<div class="about-content reveal">
+
+<div class="eyebrow">03 / About Sathco</div>
+
+<h2>
+Designed for
+<span>Moments.</span>
+</h2>
+
+<p>
+Sathco Group is a professional event-focused
+business based in Mangalore, bringing together
+event management, decoration and event media
+services under one brand.
+</p>
+
+<p>
+Our goal is simple: make every celebration,
+event and experience feel thoughtfully planned,
+beautifully presented and worth remembering.
+</p>
+
+
+<div class="stats">
+
+<div class="stat">
+<strong>03</strong>
+<span>Business Divisions</span>
+</div>
+
+<div class="stat">
+<strong>01</strong>
+<span>Unified Vision</span>
+</div>
+
+<div class="stat">
+<strong>MNG</strong>
+<span>Based in Mangalore</span>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+SERVICES
+===================================================== -->
+
+<section class="section services" id="services">
+
+<div class="container">
+
+<div class="section-header reveal">
+
+<div>
+<div class="eyebrow">04 / Services</div>
+<h2 class="section-title">Our Services</h2>
+</div>
+
+<p class="section-description">
+Tell us what you're planning. We'll help
+turn the idea into an experience.
+</p>
+
+</div>
+
+
+<div class="service-list">
+
+
+<a href="#contact" class="service-item reveal">
+
+<span class="service-number">01</span>
+
+<span class="service-name">
+Event Management
+</span>
+
+<span class="service-description">
+Planning, coordination and event execution.
+</span>
+
+<span class="service-arrow">→</span>
+
+</a>
+
+
+<a href="#contact" class="service-item reveal">
+
+<span class="service-number">02</span>
+
+<span class="service-name">
+Wedding Events
+</span>
+
+<span class="service-description">
+Creating memorable celebrations from planning
+to execution.
+</span>
+
+<span class="service-arrow">→</span>
+
+</a>
+
+
+<a href="#contact" class="service-item reveal">
+
+<span class="service-number">03</span>
+
+<span class="service-name">
+Event Decores
+</span>
+
+<span class="service-description">
+Elegant themes, stages and venue experiences.
+</span>
+
+<span class="service-arrow">→</span>
+
+</a>
+
+...
+
+[Message clipped]  View entire message
